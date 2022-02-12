@@ -5,9 +5,9 @@ int main()
 	char ch;
 	cout << "Enter (y/n)";
 	cin >> ch;
-	if (ch == 'y')
+	if (ch == 'y' || ch == 'Y')
 		cout << "y typed\n";
-	else if (ch == 'n')
+	else if (ch == 'n' || ch == 'N')
 		cout << "n typed\n";
 	else
 		cout << "Invalid input\n";
