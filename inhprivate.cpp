@@ -11,7 +11,7 @@ class baseclass {
 
 class derived : private baseclass {
     private: int pvtd;
-    protected: int protb;
+    protected: int protd;
     public:
       void pubd()
       {
@@ -25,8 +25,8 @@ int main()
   std::cout << d1.pvtb; //error
   std::cout << d1.protb; //error
   d1.pubb(); // error
-  d1.pvtd; //error
-  d1.protb; //error
   d1.pubd(); //ok
+  std::cout << d1.pvtd; //error
+  std::cout << d1.protd; //error
   return 0;
 }
